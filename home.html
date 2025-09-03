@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nepal Language Literature Event</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero {
+        background: linear-gradient(
+            45deg,
+            rgba(255, 49, 49, 0.7),
+            rgba(255, 214, 10, 0.7)
+          ),
+          url("images/venue.jpg") no-repeat center center;
+        background-size: cover; /* Ensures image covers container */
+        background-attachment: relative; /* Parallax effect on desktop */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        margin-top: 56px; /* offset for navbar */
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero img {
+        width: clamp(80px, 15vw, 150px); /* Logo responsive */
+        margin-bottom: 1rem;
+      }
+
+      .hero h1 {
+        text-shadow: 0 0 10px rgba(255, 214, 10, 0.8);
+        font-size: clamp(1.6rem, 5vw, 3rem); /* scales smoothly */
+      }
+
+      .hero p {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-weight: bold;
+        color: #222; /* ensure contrast on light backgrounds */
+      }
+
+      #countdown {
+        margin-top: 1rem;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-weight: bold;
+        background: #ffcc00;
+        color: #c1121f;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: inline-block;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* subtle depth */
+        letter-spacing: 1px; /* improves number readability */
+        transition: transform 0.2s ease-in-out;
+      }
+
+      #countdown:hover {
+        transform: scale(1.05); /* fun hover effect */
+      }
+
+      /* Responsive Tablets */
+      @media (max-width: 768px) {
+        .hero {
+          height: 60vh;
+          background-attachment: scroll; /* prevent mobile glitches */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          height: 50vh;
+        }
+      }
+
+
+      /* News Section */
+      #news {
+        background: #f8f9fa; /* light gray for contrast */
+        padding: 60px 0;
+      }
+
+      #news h2 {
+        text-align: center;
+        color: #dc3545; /* Bootstrap danger red */
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .news-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .news-item {
+        background: #fff;
+        padding: 20px;
+        border-left: 6px solid #dc3545;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .news-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-item a {
+        color: #212529;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .news-item a:hover {
+        color: #dc3545;
+        text-decoration: underline;
+      }
+
+      /* News Responsive grid for larger screens */
+      @media (min-width: 768px) {
+        .news-content {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .news-content {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* Venue */
+      #venue {
+        padding: 60px 0;
+      }
+
+      #venue h2 {
+        text-align: center;
+        color: #dc3545; /* Bootstrap red */
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .venue {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .venue img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .venue iframe {
+        width: 100%;
+        max-width: 350px; /* smaller map */
+        height: 250px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .venue p {
+        margin-top: 10px;
+        color: #555;
+      }
+
+      .venue a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #dc3545;
+        font-weight: 500;
+        text-decoration: none;
+        border: 1px solid #dc3545;
+        padding: 6px 14px;
+        border-radius: 6px;
+        transition: 0.2s ease;
+      }
+
+      .venue a:hover {
+        background: #dc3545;
+        color: #fff;
+      }
+
+      /* Venue responsive side by side on larger screens */
+      @media (min-width: 768px) {
+        .venue {
+          grid-template-columns: 1fr 1fr;
+        }
+        .venue iframe {
+          max-width: 100%;
+          height: 320px;
+        }
+      }
+
+      /* Bottom Video */
+      .video-bottom-left {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 280px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+      }
+
+      /* video bottom responsive */
+      @media (max-width: 576px) {
+        .video-bottom-left {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-danger border-3"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="#">Literature</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">Video</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venue">Venue</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <img
+        src="images/logo.png"
+        alt="event logo"
+        width="150"
+        class="mb-3"
+      />
+      <h1 class="display-4">Nepal Language Literature</h1>
+      <p class="lead fw-bold text-dark">October 18-19, Na: Pukhu, Khwopa</p>
+      <div id="countdown">Loading...</div>
+    </section>
+
+    <main>
+      <!-- Introduction -->
+      <section id="introduction" class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-4 text-danger">Introduction</h2>
+          <p>
+            This Nepal Bhasa Sahitya Sammelan (Also known as Tamunjya) is a
+            special program organized for the preservation, promotion, and
+            exchanging ideas on Nepali language literature, language, and
+            culture. Various writers, scholars, and cultural experts will
+            participate in it.
+          </p>
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule" class="py-5">
+        <div class="container">
+          <h2 class="text-center text-danger mb-4">Program Schedule</h2>
+
+          <h4>October 18</h4>
+          <div class="table-responsive mb-4">
+            <table class="table table-bordered table-striped align-middle">
+              <thead class="table-danger text-warning">
+                <tr>
+                  <th>Time</th>
+                  <th>Program</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:00 AM</td>
+                  <td>Opening ceremony</td>
+                </tr>
+                <tr>
+                  <td>11:00 AM</td>
+                  <td>Group Poetry Reading - Writers A,B,C,D,E</td>
+                </tr>
+                <tr>
+                  <td>1:00 PM</td>
+                  <td>Essay Reading - Literary D,E</td>
+                </tr>
+                <tr>
+                  <td>3:00 PM</td>
+                  <td>Discussion and interaction</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>October 19</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+              <thead class="table-danger text-warning">
+                <tr>
+                  <th>Time</th>
+                  <th>Program</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:00 AM</td>
+                  <td>Group Poetry Reading - Writers F, G</td>
+                </tr>
+                <tr>
+                  <td>11:00 AM</td>
+                  <td>Memoirs and Story Readings - Writers H, I</td>
+                </tr>
+                <tr>
+                  <td>1:00 PM</td>
+                  <td>Essay Reading - Literary J, K</td>
+                </tr>
+                <tr>
+                  <td>3:00 PM</td>
+                  <td>Closing Program</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-danger mb-4">Gallery</h2>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery1.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 1"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery1.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery2.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 2"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery2.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery3.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 3"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery3.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery4.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 4"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery4.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery5.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 5"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery5.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery6.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 6"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery6.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery7.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 7"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery7.jpg"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="images/gallery8.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 8"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery8.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Bootstrap Modal for Lightbox -->
+      <div
+        class="modal fade"
+        id="lightboxModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+            <div class="modal-body p-0">
+              <img
+                src=""
+                class="w-100 rounded"
+                id="lightboxImage"
+                alt="gallery"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="video" class="py-5">
+        <div class="container">
+          <h2 class="text-center text-danger mb-4">Videos</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/D4WJJgmVCFk?si=3s7MgCuHMUkXKpsq"
+                  title="Opening Ceremony Performance"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/B4r3t9_oOZc?si=J1hD9tVVme4CEjNu"
+                  title="Musical Highlights"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/0n2CO8rCASg?si=vScPhjQ35_XkfOZS"
+                  title="Guest Speech"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61574858987489%2Fvideos%2F1858443498433350"
+                  title="Facebook Live Recording"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <div class="container">
+          <h2>News</h2>
+          <div class="news-content">
+            <div class="news-item">
+              <a href="https://onlinemajdoor.com/?p=123180" target="_blank"
+                >तःमुंज्या सफल पार्न साहित्यकार र संस्कृतिकर्मीहरूको भेला
+                (Online Majdoor)
+              </a>
+            </div>
+            <div class="news-item">
+              <a
+                href="https://bhaktapurdaily.com/?p=7347&fbclid=IwY2xjawMkgbJleHRuA2FlbQIxMQABHiWNDK4xhYeNf6XRlmKbuqDPjUpaOBGd-KbjegjKbyISNTLBWmozDlUEVj_9_aem_V4B6-Ujw1PYKvLqyqBzHww"
+                target="_blank"
+                >तःमुंज्या सफल पार्न साहित्यकार र संस्कृतिकर्मीहरूको भेला
+                (Bhaktapur Daily)
+              </a>
+            </div>
+            <div class="news-item">
+              <a href="https://onlinemajdoor.com/?p=122872" target="_blank"
+                >तःमुंज्या सफल पार्न साहित्य र सांस्कृतिक उपसमिति गठन (Online
+                Majdoor)
+              </a>
+            </div>
+            <div class="news-item">
+              <a href="https://onlinemajdoor.com/?p=122231" target="_blank"
+                >यस वर्षको नेपालभाषा साहित्य तःमुंज्या नपुखुमा हुने (Online
+                Majdoor)</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Venue -->
+      <section id="venue">
+        <div class="container">
+          <h2>Venue</h2>
+          <div class="venue">
+            <div>
+              <img src="images/venue.jpg" alt="Venue" />
+              <p>Na: Pukhu, Bhaktapur Municipality Ward No. 2</p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.3593444172632!2d85.42356397362718!3d27.672873690905348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1aa4c7b9b7bd%3A0x40cb52e720c1ef0a!2sNa%20Pukhu!5e0!3m2!1sen!2snp!4v1756860962759!5m2!1sen!2snp"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <p>
+                <a
+                  href="https://www.google.com/maps?ll=27.672854,85.42362&z=18&t=m&hl=en&gl=NP&mapclient=embed&q=Na+Pukhu+Bhaktapur+44800"
+                  target="_blank"
+                >
+                  📍 View on Google Maps
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Nepal Language Literature Ta: Munjya</p>
+    </footer>
+
+    <!-- Floating Video -->
+    <video class="video-bottom-left" autoplay loop controls>
+      <source src="videos/Tamunjya.mp4" type="video/mp4" />
+    </video>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Countdown Timer
+      const eventDate = new Date("2025-10-04T10:00:00").getTime();
+      const timer = setInterval(() => {
+        let now = new Date().getTime();
+        let distance = eventDate - now;
+
+        if (distance < 0) {
+          document.getElementById("countdown").innerHTML = "Program Started 🎉";
+          clearInterval(timer);
+          return;
+        }
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(
+          "countdown"
+        ).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }, 1000);
+
+      <!-- Script to change modal image -->
+      document.querySelectorAll(".gallery-img").forEach((img) => {
+        img.addEventListener("click", function () {
+          document.getElementById("lightboxImage").src =
+            this.getAttribute("data-bs-img");
+        });
+      });
+    </script>
+  </body>
+</html>
