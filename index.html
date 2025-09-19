@@ -17,7 +17,7 @@
           ),
           url("images/venue.jpg") no-repeat center center;
         background-size: cover; /* Ensures image covers container */
-        background-attachment: relative; /* Parallax effect on desktop */
+        background-attachment: scroll; /* Parallax effect on desktop */
         height: 80vh;
         display: flex;
         align-items: center;
@@ -277,8 +277,8 @@
         <div class="container text-center">
           <h2 class="mb-4 text-danger">कार्यक्रम परिचय</h2>
           <p>
-            यो दुई दिने साहित्य सम्मेलन नेपालभाषा साहित्यको संरक्षण, प्रवर्द्धन
-            र विकासका लागि आयोजित विशेष कार्यक्रम हो।
+            नेपाल संवत् ११४५ को कौलगथ द्वादशी र त्रयोदशी (असोज १८ र १९ गते) मा भक्तपुरको नःपुखु नजिक पीडाकगु नेपालभाषा साहित्य तःमुंज्या र सांस्कृतिक कार्यक्रम आयोजना हुँदैछ। यसमा नेपालभाषा साहित्य र संस्कृतिसम्बन्धी विभिन्न प्रस्तुति, चर्चा, र सांस्कृतिक गतिविधिहरू हुनेछन्।
+            मुख्य आयोजक हानेयुता साहित्य र सांस्कृतिक विद्या रहेका छन् भने अन्य संस्थाहरूले सह–आयोजन गर्नेछन्।
           </p>
         </div>
       </section>
@@ -291,7 +291,7 @@
           <h4>असोज १८</h4>
           <div class="table-responsive mb-4">
             <table class="table table-bordered table-striped align-middle">
-              <thead class="table-danger text-warning">
+              <thead class="table-warning text-dark">
                 <tr>
                   <th>समय</th>
                   <th>कार्यक्रम</th>
@@ -299,7 +299,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>१०:००AM</td>
+                  <td>११:००AM</td>
                   <td>उद्घाटन</td>
                 </tr>
                 <tr>
@@ -577,20 +577,77 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; २०२५ पीङाकगु नेपालभाषा साहित्य तःमुंज्या</p>
-    </footer>
+        <!-- Footer -->
+
+<footer style="background:#000; color:#fff; padding:20px; font-family:Arial, sans-serif;">
+  <div style="max-width:1200px; margin:auto; line-height:1.6;">
+
+    <!-- Committee & Contacts -->
+    <div style="background:#111; padding:15px; border-radius:8px;">
+      <h3 style="color:#00ff88; margin-bottom:15px; text-align:center;">
+        साहित्य र सांस्कृतिक विद्या द्वारा आयोजित
+      </h3>
+      <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px;">
+        
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>क)</strong> पीङाकगु नेपालभाषा साहित्य तःमुंज्या <br>
+          ठ्वसाखल: इटाछें, नःपुखु, ख्वप <br>
+          Email: <a href="mailto:45tamujya@gmail.com" style="color:#ff6666;">45tamujya@gmail.com</a>
+        </li>
+
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>ख)</strong> नेपालभाषा साहित्य तःमुंज्या, कीपू, यें <br>
+          नायः: श्रीकृष्ण महर्जन (पाँगा) <br>
+          सम्पर्क नं.: ९८४१२३१२६२
+        </li>
+
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>ग)</strong> नेपालभाषा साहित्य तःमुंज्या, यें, महानगर <br>
+          नायः: रत्न डंगोल (ठहिटी) <br>
+          सम्पर्क नं.: ९८४१२३३३२८
+        </li>
+
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>घ)</strong> नेपालभाषा साहित्य तःमुंज्या, टोखा, यें <br>
+          नायः: काशिलाल डंगोल (टोखा) <br>
+          सम्पर्क नं.: ९८६१९७६७१५
+        </li>
+
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>ड)</strong> नेपालभाषा साहित्य तःमुंज्या, पल (ललितपुर) <br>
+          नायः: कविन्द्र डंगोल (खोना) <br>
+          सम्पर्क नं.: ९८४१४५४७४५
+        </li>
+
+        <li style="flex:1 1 30%; min-width:250px;">
+          <strong>च)</strong> नेपालभाषा साहित्य तःमुंज्या, भाँल (काभ्रे) <br>
+          नायः: सत्यनारायण श्रेष्ठ (बनेपा) <br>
+          सम्पर्क नं.: ९८४१४५४५४१
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Footer bottom -->
+    <hr style="border:0; border-top:1px solid #444; margin:20px 0;">
+    <p style="text-align:center; font-size:14px; color:#bbb;">
+      &copy; नेपाल संवत ११४५, असोज | सर्वाधिकार सुरक्षित।
+    </p>
+  </div>
+</footer>
+
+    
+
 
     <!-- Floating Video -->
-    <video class="video-bottom-left" autoplay loop controls>
+    <video class="video-bottom-left" autoplay loop muted controls>
       <source src="videos/Tamunjya.mp4" type="video/mp4" />
     </video>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Countdown Timer
-      const eventDate = new Date("2025-10-04T10:00:00").getTime();
+      const eventDate = new Date("2025-10-04T11:00:00").getTime();
       const timer = setInterval(() => {
         let now = new Date().getTime();
         let distance = eventDate - now;
@@ -610,7 +667,7 @@
 
         document.getElementById(
           "countdown"
-        ).innerHTML = `${days}दिन  ${hours}घण्टा  ${minutes}मिनेट  ${seconds}सेकेन्ड`;
+        ).innerHTML = `${days} दिन  ${hours} घण्टा  ${minutes} मिनेट  ${seconds} सेकेन्ड`;
       }, 1000);
 
       <!-- Script to change modal image -->
