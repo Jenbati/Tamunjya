@@ -17,7 +17,7 @@
           ),
           url("images/venue.jpg") no-repeat center center;
         background-size: cover; /* Ensures image covers container */
-        background-attachment: relative; /* Parallax effect on desktop */
+        background-attachment: scroll; /* Parallax effect on desktop */
         height: 80vh;
         display: flex;
         align-items: center;
@@ -76,7 +76,6 @@
           height: 50vh;
         }
       }
-
 
       /* News Section */
       #news {
@@ -227,7 +226,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-danger border-3"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold text-warning" href="#">Literature</a>
+        <a class="navbar-brand fw-bold text-warning" href="#">साहित्य तःमुंज्या</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -238,22 +237,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#introduction">Introduction</a>
+              <a class="nav-link" href="#home">गृहपृष्ठ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#schedule">Schedule</a>
+              <a class="nav-link" href="#introduction">परिचय</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#schedule">तालिका</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#video">Video</a>
+              <a class="nav-link" href="#gallery">ग्यालेरी</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#venue">Venue</a>
+              <a class="nav-link" href="#video">भिडियो</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">समाचार</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venue">स्थान</a>
             </li>
           </ul>
         </div>
@@ -262,14 +265,9 @@
 
     <!-- Hero -->
     <section id="home" class="hero">
-      <img
-        src="images/logo.png"
-        alt="event logo"
-        width="150"
-        class="mb-3"
-      />
-      <h1 class="display-4">Nepal Language Literature</h1>
-      <p class="lead fw-bold text-dark">October 18-19, Na: Pukhu, Khwopa</p>
+      <img src="images/logo.png" alt="event logo" width="150" class="mb-3" />
+      <h1 class="display-4">पीङाकगु नेपालभाषा साहित्य तःमुंज्या</h1>
+      <p class="lead fw-bold text-dark">असोज १८–१९ गते, न:पुखु, ख्वप</p>
       <div id="countdown">Loading...</div>
     </section>
 
@@ -277,13 +275,10 @@
       <!-- Introduction -->
       <section id="introduction" class="py-5 bg-light">
         <div class="container text-center">
-          <h2 class="mb-4 text-danger">Introduction</h2>
+          <h2 class="mb-4 text-danger">कार्यक्रम परिचय</h2>
           <p>
-            This Nepal Bhasa Sahitya Sammelan (Also known as Tamunjya) is a
-            special program organized for the preservation, promotion, and
-            exchanging ideas on Nepali language literature, language, and
-            culture. Various writers, scholars, and cultural experts will
-            participate in it.
+            नेपाल संवत् ११४५ को कौलगथ द्वादशी र त्रयोदशी (असोज १८ र १९ गते) मा भक्तपुरको नःपुखु नजिक पीडाकगु नेपालभाषा साहित्य तःमुंज्या र सांस्कृतिक कार्यक्रम आयोजना हुँदैछ। यसमा नेपालभाषा साहित्य र संस्कृतिसम्बन्धी विभिन्न प्रस्तुति, चर्चा, र सांस्कृतिक गतिविधिहरू हुनेछन्।
+            मुख्य आयोजक हानेयुता साहित्य र सांस्कृतिक विद्या रहेका छन् भने अन्य संस्थाहरूले सह–आयोजन गर्नेछन्।
           </p>
         </div>
       </section>
@@ -291,63 +286,63 @@
       <!-- Schedule -->
       <section id="schedule" class="py-5">
         <div class="container">
-          <h2 class="text-center text-danger mb-4">Program Schedule</h2>
+          <h2 class="text-center text-danger mb-4">कार्यक्रम तालिका</h2>
 
-          <h4>October 18</h4>
+          <h4>असोज १८</h4>
           <div class="table-responsive mb-4">
             <table class="table table-bordered table-striped align-middle">
-              <thead class="table-danger text-warning">
+              <thead class="table-warning text-dark">
                 <tr>
-                  <th>Time</th>
-                  <th>Program</th>
+                  <th>समय</th>
+                  <th>कार्यक्रम</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>10:00 AM</td>
-                  <td>Opening ceremony</td>
+                  <td>११:००AM</td>
+                  <td>उद्घाटन</td>
                 </tr>
                 <tr>
-                  <td>11:00 AM</td>
-                  <td>Group Poetry Reading - Writers A,B,C,D,E</td>
+                  <td>११:००AM</td>
+                  <td>साहित्य वाचन</td>
                 </tr>
                 <tr>
-                  <td>1:00 PM</td>
-                  <td>Essay Reading - Literary D,E</td>
+                  <td>१२:००AM</td>
+                  <td>साहित्य वाचन - Literary D,E</td>
                 </tr>
                 <tr>
-                  <td>3:00 PM</td>
-                  <td>Discussion and interaction</td>
+                  <td>२:००PM</td>
+                  <td>विशेष व्याख्यान</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h4>October 19</h4>
+          <h4>असोज १९</h4>
           <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle">
               <thead class="table-danger text-warning">
                 <tr>
-                  <th>Time</th>
-                  <th>Program</th>
+                  <th>समय</th>
+                  <th>कार्यक्रम</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>10:00 AM</td>
-                  <td>Group Poetry Reading - Writers F, G</td>
+                  <td>१०:००AM</td>
+                  <td>उद्घाटन</td>
                 </tr>
                 <tr>
-                  <td>11:00 AM</td>
-                  <td>Memoirs and Story Readings - Writers H, I</td>
+                  <td>११:००AM</td>
+                  <td>साहित्य वाचन</td>
                 </tr>
                 <tr>
-                  <td>1:00 PM</td>
-                  <td>Essay Reading - Literary J, K</td>
+                  <td>१२:००AM</td>
+                  <td>साहित्य वाचन - Literary D,E</td>
                 </tr>
                 <tr>
-                  <td>3:00 PM</td>
-                  <td>Closing Program</td>
+                  <td>२:००PM</td>
+                  <td>विशेष व्याख्यान</td>
                 </tr>
               </tbody>
             </table>
@@ -358,7 +353,7 @@
       <!-- Gallery -->
       <section id="gallery" class="py-5 bg-light">
         <div class="container">
-          <h2 class="text-center text-danger mb-4">Gallery</h2>
+          <h2 class="text-center text-danger mb-4">ग्यालेरी</h2>
           <div class="row g-3">
             <div class="col-6 col-md-3">
               <img
@@ -467,7 +462,7 @@
 
       <section id="video" class="py-5">
         <div class="container">
-          <h2 class="text-center text-danger mb-4">Videos</h2>
+          <h2 class="text-center text-danger mb-4">भिडियो</h2>
           <div class="row g-4">
             <div class="col-md-6">
               <div class="ratio ratio-16x9">
@@ -519,7 +514,7 @@
       <!-- News -->
       <section id="news">
         <div class="container">
-          <h2>News</h2>
+          <h2>समाचार</h2>
           <div class="news-content">
             <div class="news-item">
               <a href="https://onlinemajdoor.com/?p=123180" target="_blank"
@@ -554,11 +549,11 @@
       <!-- Venue -->
       <section id="venue">
         <div class="container">
-          <h2>Venue</h2>
+          <h2>स्थान</h2>
           <div class="venue">
             <div>
               <img src="images/venue.jpg" alt="Venue" />
-              <p>Na: Pukhu, Bhaktapur Municipality Ward No. 2</p>
+              <p>न:पुखु, भक्तपुर नगरपालिका वडा नं २</p>
             </div>
             <div>
               <iframe
@@ -582,7 +577,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+        <!-- Footer -->
 
 <footer style="background:#000; color:#fff; padding:20px; font-family:Arial, sans-serif;">
   <div style="max-width:1200px; margin:auto; line-height:1.6;">
@@ -590,42 +585,42 @@
     <!-- Committee & Contacts -->
     <div style="background:#111; padding:15px; border-radius:8px;">
       <h3 style="color:#00ff88; margin-bottom:15px; text-align:center;">
-        साहित्य व सांस्कृतिक विधा दुनीयाः थाय
+        साहित्य र सांस्कृतिक विद्या द्वारा आयोजित
       </h3>
       <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px;">
         
         <li style="flex:1 1 30%; min-width:250px;">
-          <strong>क)</strong> पीडाकगु नेपालभाषा साहित्य तःमुंज्या <br>
+          <strong>क)</strong> पीङाकगु नेपालभाषा साहित्य तःमुंज्या <br>
           ठ्वसाखल: इटाछें, नःपुखु, ख्वप <br>
           Email: <a href="mailto:45tamujya@gmail.com" style="color:#ff6666;">45tamujya@gmail.com</a>
         </li>
 
         <li style="flex:1 1 30%; min-width:250px;">
           <strong>ख)</strong> नेपालभाषा साहित्य तःमुंज्या, कीपू, यें <br>
-          नायः: श्रीकान्त महर्जन (पिंगा) <br>
+          नायः: श्रीकृष्ण महर्जन (पाँगा) <br>
           सम्पर्क नं.: ९८४१२३१२६२
         </li>
 
         <li style="flex:1 1 30%; min-width:250px;">
           <strong>ग)</strong> नेपालभाषा साहित्य तःमुंज्या, यें, महानगर <br>
-          नायः: रत्न डंगोल (ठिमीटी) <br>
+          नायः: रत्न डंगोल (ठहिटी) <br>
           सम्पर्क नं.: ९८४१२३३३२८
         </li>
 
         <li style="flex:1 1 30%; min-width:250px;">
-          <strong>घ)</strong> नेपालभाषा साहित्य तःमुंज्या, ठोबा, यें <br>
-          नायः: कान्तिलाल डंगोल (ठोबा) <br>
+          <strong>घ)</strong> नेपालभाषा साहित्य तःमुंज्या, टोखा, यें <br>
+          नायः: काशिलाल डंगोल (टोखा) <br>
           सम्पर्क नं.: ९८६१९७६७१५
         </li>
 
         <li style="flex:1 1 30%; min-width:250px;">
           <strong>ड)</strong> नेपालभाषा साहित्य तःमुंज्या, पल (ललितपुर) <br>
-          नायः: कविन्द्र डंगोल (बाँटा) <br>
+          नायः: कविन्द्र डंगोल (खोना) <br>
           सम्पर्क नं.: ९८४१४५४७४५
         </li>
 
         <li style="flex:1 1 30%; min-width:250px;">
-          <strong>च)</strong> नेपालभाषा साहित्य तःमुंज्या, भाँल (काछे) <br>
+          <strong>च)</strong> नेपालभाषा साहित्य तःमुंज्या, भाँल (काभ्रे) <br>
           नायः: सत्यनारायण श्रेष्ठ (बनेपा) <br>
           सम्पर्क नं.: ९८४१४५४५४१
         </li>
@@ -641,17 +636,18 @@
   </div>
 </footer>
 
+    
 
 
     <!-- Floating Video -->
-    <video class="video-bottom-left" autoplay loop controls>
+    <video class="video-bottom-left" autoplay loop muted controls>
       <source src="videos/Tamunjya.mp4" type="video/mp4" />
     </video>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Countdown Timer
-      const eventDate = new Date("2025-10-04T10:00:00").getTime();
+      const eventDate = new Date("2025-10-04T11:00:00").getTime();
       const timer = setInterval(() => {
         let now = new Date().getTime();
         let distance = eventDate - now;
@@ -671,7 +667,7 @@
 
         document.getElementById(
           "countdown"
-        ).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        ).innerHTML = `${days} दिन  ${hours} घण्टा  ${minutes} मिनेट  ${seconds} सेकेन्ड`;
       }, 1000);
 
       <!-- Script to change modal image -->
