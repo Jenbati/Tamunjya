@@ -15,7 +15,7 @@
             rgba(255, 49, 49, 0.7),
             rgba(255, 214, 10, 0.7)
           ),
-          url("images/venue.jpg") no-repeat center center;
+          url("images/banner.jpg") no-repeat center center;
         background-size: cover; /* Ensures image covers container */
         background-attachment: scroll; /* Parallax effect on desktop */
         height: 80vh;
@@ -345,7 +345,7 @@
                   <td>श्री रविन्द्र खर्बुजा (अध्यक्ष, आयोजक समिति)</td>
                 </tr>
                 <tr>
-                  <td>कार्यक्रम उद्घाटन </td>
+                  <td>कार्यक्रम उद्घाटन</td>
                   <td>श्री जगतलाल खर्बुजा (सांस्कृतिक गुरु, तवाख्वा शाखा)</td>
                 </tr>
                 <tr>
@@ -359,7 +359,7 @@
                 <tr>
                   <td>बीच बीचमा राजनीति, संस्कृति र साहित्य बिषयमा मन्तव्य</td>
                   <td>विभिन्न अतिथिहरुबाट</td>
-                </tr>             
+                </tr>
                 <tr>
                   <td>सम्मान कार्यक्रम</td>
                   <td>विशिष्ट व्यक्तित्वहरु</td>
@@ -373,19 +373,18 @@
                   <td>श्री आशाकुमार चिकंबन्जार (अध्यक्ष, मूल गुथि)</td>
                 </tr>
                 <tr>
-                  <td colspan="2">सभापतिको मन्तव्य र भोलिसम्मको लागि कार्यक्रम स्थगित</td>
-                
+                  <td colspan="2">
+                    सभापतिको मन्तव्य र भोलिसम्मको लागि कार्यक्रम स्थगित
+                  </td>
                 </tr>
                 <tr>
                   <td colspan="2">बेलुकी ७ः०० बजेदेखि सांस्कृतिक कार्यक्रम</td>
-                  
                 </tr>
-                
               </tbody>
             </table>
           </div>
 
-          <h4>असोज १९ गते, आइतनबार (कौलाथ्व त्रयोदशी)</h4>
+          <h4>असोज १९ गते, आइतबार (कौलाथ्व त्रयोदशी)</h4>
           <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle">
               <thead class="table-danger text-warning">
@@ -436,14 +435,13 @@
                   <td>श्री नरेश खत्री (उपाध्यक्ष, मूल गुथि)</td>
                 </tr>
                 <tr>
-                  <td colspan="2">सभापतिको मन्तव्य सहित औपचारिक कार्यक्रम समापन घोषणा</td>
-                  
+                  <td colspan="2">
+                    सभापतिको मन्तव्य सहित औपचारिक कार्यक्रम समापन घोषणा
+                  </td>
                 </tr>
                 <tr>
                   <td colspan="2">बेलुकी ७ः०० बजेदेखि सांस्कृतिक कार्यक्रम</td>
-                  
                 </tr>
-
               </tbody>
             </table>
           </div>
@@ -515,10 +513,41 @@
                 data-bs-img="images/gallery6.jpg"
               />
             </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="images/gallery7.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 4"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery7.jpg"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="images/gallery8.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 5"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery8.jpg"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                src="images/gallery9.jpg"
+                class="img-fluid rounded border border-warning gallery-img"
+                alt="gallery 6"
+                data-bs-toggle="modal"
+                data-bs-target="#lightboxModal"
+                data-bs-img="images/gallery9.jpg"
+              />
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Gallery Bootstrap Modal for Lightbox -->
       <!-- Gallery Bootstrap Modal for Lightbox -->
       <div
         class="modal fade"
@@ -526,20 +555,40 @@
         tabindex="-1"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-dark">
-            <div class="modal-body p-0">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-dark border-0">
+            <div class="modal-body p-0 position-relative text-center">
               <img
                 src=""
-                class="w-100 rounded"
+                class="img-fluid rounded"
                 id="lightboxImage"
                 alt="gallery"
+                style="max-height: 90vh; object-fit: contain"
               />
+
+              <!-- Prev button -->
+              <button
+                class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
+                id="prevBtn"
+                style="opacity: 0.7; font-size: 2rem"
+              >
+                ❮
+              </button>
+
+              <!-- Next button -->
+              <button
+                class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
+                id="nextBtn"
+                style="opacity: 0.7; font-size: 2rem"
+              >
+                ❯
+              </button>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- video -->
       <section id="video" class="py-5">
         <div class="container">
           <h2 class="text-center text-danger mb-4">भिडियो</h2>
@@ -831,13 +880,55 @@
           "countdown"
         ).innerHTML = `${days} दिन  ${hours} घण्टा  ${minutes} मिनेट  ${seconds} सेकेन्ड`;
       }, 1000);
+    </script>
 
-      <!-- Script to change modal image -->
-      document.querySelectorAll(".gallery-img").forEach((img) => {
-        img.addEventListener("click", function () {
-          document.getElementById("lightboxImage").src =
-            this.getAttribute("data-bs-img");
+    <!-- Gallery Bootstrap Modal for Lightbox -->
+    <script>
+      const galleryImages = document.querySelectorAll(".gallery-img");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const lightboxModal = document.getElementById("lightboxModal");
+
+      let currentIndex = 0;
+
+      // Open modal with clicked image
+      galleryImages.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          currentIndex = index;
+          lightboxImage.src = img.dataset.bsImg;
         });
+      });
+
+      // Show previous image
+      function showPrev() {
+        currentIndex =
+          (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        lightboxImage.src = galleryImages[currentIndex].dataset.bsImg;
+      }
+
+      // Show next image
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        lightboxImage.src = galleryImages[currentIndex].dataset.bsImg;
+      }
+
+      prevBtn.addEventListener("click", showPrev);
+      nextBtn.addEventListener("click", showNext);
+
+      // Keyboard navigation (only when modal is open)
+      document.addEventListener("keydown", (e) => {
+        if (lightboxModal.classList.contains("show")) {
+          if (e.key === "ArrowLeft") {
+            showPrev();
+          } else if (e.key === "ArrowRight") {
+            showNext();
+          } else if (e.key === "Escape") {
+            // Close modal on Esc
+            const modalInstance = bootstrap.Modal.getInstance(lightboxModal);
+            modalInstance.hide();
+          }
+        }
       });
     </script>
   </body>
