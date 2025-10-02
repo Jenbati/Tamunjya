@@ -451,76 +451,46 @@
       <!-- Gallery -->
       <section id="gallery" class="py-5 bg-light">
         <div class="container">
-          <h2 class="text-center text-danger mb-4">ग्यालेरी</h2>
+          <h2 class="text-center text-danger mb-4">ग्यालरी</h2>
           <div class="row g-3">
             <div class="col-12 col-md-4">
               <img
-                src="images/gallery1.jpg"
+                src="images/gallery12.jpg"
                 class="img-fluid rounded border border-warning gallery-img"
                 alt="gallery 1"
                 data-bs-toggle="modal"
                 data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery1.jpg"
+                data-bs-img="images/gallery12.jpg"
               />
             </div>
             <div class="col-12 col-md-4">
               <img
-                src="images/gallery2.jpg"
+                src="images/gallery11.jpg"
                 class="img-fluid rounded border border-warning gallery-img"
                 alt="gallery 2"
                 data-bs-toggle="modal"
                 data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery2.jpg"
+                data-bs-img="images/gallery11.jpg"
               />
             </div>
             <div class="col-12 col-md-4">
               <img
-                src="images/gallery3.jpg"
+                src="images/gallery10.jpg"
                 class="img-fluid rounded border border-warning gallery-img"
                 alt="gallery 3"
                 data-bs-toggle="modal"
                 data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery3.jpg"
+                data-bs-img="images/gallery10.jpg"
               />
             </div>
             <div class="col-12 col-md-4">
               <img
-                src="images/gallery4.jpg"
+                src="images/gallery9.jpg"
                 class="img-fluid rounded border border-warning gallery-img"
                 alt="gallery 4"
                 data-bs-toggle="modal"
                 data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery4.jpg"
-              />
-            </div>
-            <div class="col-12 col-md-4">
-              <img
-                src="images/gallery5.jpg"
-                class="img-fluid rounded border border-warning gallery-img"
-                alt="gallery 5"
-                data-bs-toggle="modal"
-                data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery5.jpg"
-              />
-            </div>
-            <div class="col-12 col-md-4">
-              <img
-                src="images/gallery6.jpg"
-                class="img-fluid rounded border border-warning gallery-img"
-                alt="gallery 6"
-                data-bs-toggle="modal"
-                data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery6.jpg"
-              />
-            </div>
-            <div class="col-12 col-md-4">
-              <img
-                src="images/gallery7.jpg"
-                class="img-fluid rounded border border-warning gallery-img"
-                alt="gallery 4"
-                data-bs-toggle="modal"
-                data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery7.jpg"
+                data-bs-img="images/gallery9.jpg"
               />
             </div>
             <div class="col-12 col-md-4">
@@ -535,19 +505,25 @@
             </div>
             <div class="col-12 col-md-4">
               <img
-                src="images/gallery9.jpg"
+                src="images/gallery7.jpg"
                 class="img-fluid rounded border border-warning gallery-img"
                 alt="gallery 6"
                 data-bs-toggle="modal"
                 data-bs-target="#lightboxModal"
-                data-bs-img="images/gallery9.jpg"
+                data-bs-img="images/gallery7.jpg"
               />
             </div>
+
           </div>
+
+          <!-- View More Button -->
+          <div class="text-center mt-4">
+            <a href="gallery.html" class="btn btn-danger" target="_blank">View More</a>
+          </div>
+
         </div>
       </section>
 
-      <!-- Gallery Bootstrap Modal for Lightbox -->
       <!-- Gallery Bootstrap Modal for Lightbox -->
       <div
         class="modal fade"
@@ -702,6 +678,12 @@
               </div>
             </div>
           </div>
+
+          <!-- View More button -->
+          <div class="text-center mt-4">
+            <a href="videos.html" class="btn btn-danger" target="_blank">View More</a>
+          </div>
+
         </div>
       </section>
 
@@ -887,7 +869,7 @@
         let distance = eventDate - now;
 
         if (distance < 0) {
-          document.getElementById("countdown").innerHTML = "Program Started 🎉";
+          document.getElementById("countdown").innerHTML = "कार्यक्रम सुरु भइसकेको छ!";
           clearInterval(timer);
           return;
         }
