@@ -218,6 +218,38 @@
           display: none;
         }
       }
+
+      /*Live video*/
+      /* Live Video Section */
+      #live-video {
+        background: #f8f9fa; /* same as news section */
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      #live-video h2 {
+        color: #dc3545; /* same red as your news heading */
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
     </style>
   </head>
   <body>
@@ -272,6 +304,25 @@
       <p class="lead fw-bold text-dark">असोज १८–१९ गते, न:पुखु, ख्वप</p>
       <div id="countdown">Loading...</div>
     </section>
+
+    <!-- Live Video Section -->
+    <section id="live-video">
+      <div class="container">
+        <h2>🎥 Live Video</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/GcavskR4uZA?autoplay=1"
+            title="YouTube live stream"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+
 
     <main>
       <!-- Introduction -->
@@ -688,8 +739,6 @@
                 </div>
               </div>
             </div>
-
-        
           </div>
 
           <!-- View More button -->
@@ -927,9 +976,10 @@
     </footer>
 
     <!-- Floating Video -->
-    <video class="video-bottom-left" autoplay loop muted controls>
+    <!-- <video class="video-bottom-left" autoplay loop muted controls>
       <source src="videos/Tamunjya.mp4" type="video/mp4" />
-    </video>
+
+    </video> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
