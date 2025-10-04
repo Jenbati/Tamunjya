@@ -279,6 +279,7 @@
       aspect-ratio: 16 / 9;
       overflow: hidden;
       border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     }
 
     .video-wrapper iframe {
@@ -304,6 +305,22 @@
 
     #unmuteBtn:hover {
       opacity: 1;
+    }
+
+    /* For smaller mobile screens */
+    @media (max-width: 768px) {
+      .video-wrapper {
+        width: 95%; /* Increase width on mobile */
+        border-radius: 8px; /* Slightly smaller corner radius */
+      }
+    }
+
+    /* For very small phones */
+    @media (max-width: 480px) {
+      .video-wrapper {
+        width: 100%; /* Full width */
+        border-radius: 0; /* Edge-to-edge for immersive look */
+      }
     }
     </style>
   </head>
@@ -812,6 +829,17 @@
           <div class="news-content">
             <div class="news-item">
               <a
+                href="https://onlinemajdoor.com/?p=124320"
+                target="_blank"
+                class="text-decoration-none text-dark"
+                >४५ औँ नेपालभाषा साहित्य तःमुंज्याको प्रचारार्थ सुकुन्दा ¥याली
+                <small class="text-muted"
+                  >(आश्विन १७, २०८२ - onlinemajdoor.com)</small
+                >
+              </a>
+            </div>
+            <div class="news-item">
+              <a
                 href="https://abcdkhabar.com/news/details/13114"
                 target="_blank"
                 class="text-decoration-none text-dark"
@@ -898,17 +926,7 @@
                 >
               </a>
             </div>
-            <div class="news-item">
-              <a
-                href="https://onlinemajdoor.com/?p=122231"
-                target="_blank"
-                class="text-decoration-none text-dark"
-                >यस वर्षको नेपालभाषा साहित्य तःमुंज्या नपुखुमा हुने
-                <small class="text-muted"
-                  >(श्रावण १३, २०८२ - onlinemajdoor.com)</small
-                ></a
-              >
-            </div>
+            
           </div>
 
           <!-- View More button -->
