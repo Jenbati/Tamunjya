@@ -13,7 +13,8 @@ const translations = {
 
     // countdown timer
     countdown_loading: "Loading...",
-    countdown_started: "The event has started!",
+    // countdown_started: "The event has started!",
+    countdown_started: "The program has ended!",
     day: "day",
     hour: "hour",
     minute: "minute",
@@ -44,7 +45,8 @@ const translations = {
 
     // countdown timer
     countdown_loading: "लोड हुँदैछ...",
-    countdown_started: "कार्यक्रम सुरु भइसकेको छ!",
+    // countdown_started: "कार्यक्रम सुरु भइसकेको छ!",
+    countdown_started: "कार्यक्रम समाप्त भइसकेको छ!",
     day: "दिन",
     hour: "घण्टा",
     minute: "मिनेट",
@@ -76,7 +78,8 @@ const translations = {
 
     // countdown timer
     countdown_loading: "लोड ज्या ...",
-    countdown_started: "पुजा त्वया!",
+    // countdown_started: "पुजा त्वया!",
+    countdown_started: "पुजा त्वया सिपला ज्या!",
     day: "थ्व",
     hour: "थुकु",
     minute: "मिनेट",
