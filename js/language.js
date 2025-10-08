@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (translations[lang] && translations[lang][key]) {
-        el.textContent = translations[lang][key];
+        // ✅ Use innerHTML instead of textContent to allow HTML tags
+        el.innerHTML = translations[lang][key];
       }
     });
   }
 });
-

@@ -30,6 +30,23 @@ const translations = {
       "The Dabali of Nepal Bhasa Literary Festival presents literary and cultural programs against injustice, corruption, fake refugee scams, land fraud, human trafficking in the name of foreign employment, and global imperialism, among other issues. It also addresses social, national, and international concerns as a duty of writers and intellectuals.",
     intro_p4:
       "To make the Nepal Bhasa Literary and Cultural Festival a grand success, the participation and support of workers, farmers, youth, students, teachers, women, entrepreneurs, traders, and employees are as important as ever. We kindly request everyone to extend financial, physical, and moral support as in previous years.",
+    
+      // Footer
+    footer_heading: "A Place to Submit Literature and Cultural Knowledge",
+    footer_a:
+      "(a) 45 Nepal Bhasa Sahitya Tamunjya <br> Organizer: Itachhen, Na:Pukhu, Khwopa <br> Contact: 01-5153420 <br> Email: 45tamujya@gmail.com",
+    footer_b:
+      "(b) Nepal Bhasa Sahitya Tamunjya, Kipu, Ktm <br> Chief: Shreekrishna Maharjan (Panga) <br> Contact: 9841231262",
+    footer_c:
+      "(c) Nepal Bhasa Sahitya Tamunjya, Ktm, Metropolitan <br> Chief: Ratna Dangol (Thahiti) <br> Contact: 9841233328",
+    footer_d:
+      "(d) Nepal Bhasa Sahitya Tamunjya, Tokha, Ktm <br> Chief: Kashilal Dangol (Tokha) <br> Contact: 9861976715",
+    footer_e:
+      "(e) Nepal Bhasa Sahitya Tamunjya, Pal (Lalitpur) <br> Chief: Kavindra Dangol (Khona) <br> Contact: 9841454745",
+    footer_f:
+      "(f) Nepal Bhasa Sahitya Tamunjya, Bhal (Kavre) <br> Chief: Satyanarayan Shrestha (Banepa) <br> Contact: 9841454541",
+    footer_bottom:
+      "&copy; 45th Nepal Bhasa Literary Festival, Itachen, Na:Pukhu, Khwopa-2",
   },
   ne: {
     brand: "साहित्य तःमुंज्या",
@@ -63,6 +80,22 @@ const translations = {
     intro_p4:
       "नेपालभाषा साहित्य तःमुंज्या तथा सांस्कृतिक कार्यक्रमलाई भव्यरूपमा सम्पन्न गर्न मजदुर, किसान, युवा, विद्यार्थी, शिक्षक, महिला, उद्योगी, व्यापारी, कर्मचारी लगायतको सहयोग र सहभागिता सदाझै जरुरी छ । दाजुभाइ, दिदीबहिनीहरूमा यस अगाडिझैँ यो वर्ष पनि आर्थिक, भौतिक, नैतिक सहयोग गर्नुहुन विनम्र अनुरोध छ ।",
  
+    // Footer (original Nepali)
+    footer_heading: "साहित्य र सांस्कृतिक विद्या बुझाउने स्थान",
+    footer_a:
+      "क) पीङाकगु नेपालभाषा साहित्य तःमुंज्या <br> आयोजक: इटाछें, नःपुखु, ख्वप,<br> सम्पर्क नं.: ०१-५१५३४२० <br> Email: 45tamujya@gmail.com",
+    footer_b:
+      "ख) नेपालभाषा साहित्य तःमुंज्या, कीपू, यें <br> नायः: श्रीकृष्ण महर्जन (पाँगा) <br> सम्पर्क नं.: ९८४१२३१२६२",
+    footer_c:
+      "ग) नेपालभाषा साहित्य तःमुंज्या, यें, महानगर <br> नायः: रत्न डंगोल (ठहिटी) <br> सम्पर्क नं.: ९८४१२३३३२८",
+    footer_d:
+      "घ) नेपालभाषा साहित्य तःमुंज्या, टोखा, यें <br> नायः: काशिलाल डंगोल (टोखा) <br> सम्पर्क नं.: ९८६१९७६७१५",
+    footer_e:
+      "ड) नेपालभाषा साहित्य तःमुंज्या, पल (ललितपुर) <br> नायः: कविन्द्र डंगोल (खोना) <br> सम्पर्क नं.: ९८४१४५४७४५",
+    footer_f:
+      "च) नेपालभाषा साहित्य तःमुंज्या, भाँल (काभ्रे) <br> नायः: सत्यनारायण श्रेष्ठ (बनेपा) <br> सम्पर्क नं.: ९८४१४५४५४१",
+    footer_bottom:
+      "&copy; ४५ औं नेपालभाषा साहित्य तःमुंञ्या, इटाछेँ, नःपुखु, ख्वप-२",
   },
   newa: {
     brand: "तःमुंज्या साहित्य",
@@ -91,5 +124,22 @@ const translations = {
     intro_p2: "झीगु भाय्–साहित्य व कला नपां नपां तजिलजी च्वन्ह्याकेगु अलय् देश व विदेशया समसामयिक राजनीतिया खाँ त जनतायाता ध्वाथुइकेता नेपालभाषा साहित्य तःमुंज्या थौं स्वयो पीङादा हाँ निस्वानेगु ज्या जूगु खः । झीगु तःमुंज्याया दबु साहित्यिक दबु नपां नपां राजनैतिक दबु नं खः । थ्व दबुलि सकलीं ज्यासाङः नईपुं वर्गया ह्यूपाया निंतिं सः थ्वयक वयो च्वँगु खः । थ्वहे दबुलिं ज्यासङः नइपुं वर्गया साहित्यकार भाजु मयजुपुं नं ब्वलांक वयो च्वँगु खः ।",
     intro_p3: "नेपालभाषा साहित्य तःमुंज्याया दबुली अन्याय, अत्याचार, भ्रष्टाचार, सहकारी ठगी, नक्कली भुटानी शरणार्थी, ललिता निवास जग्गा प्रकरण, पतंजली जग्गा, गिरीबन्धु टी स्टेट, भिजिट भिसा, म्यान पावरया नामय मानव तस्कर, अमेरिकी नीति व कानुन पालन याय्मगु एमसिसि परियोजना, भारतीय विस्तारवाद एकाधिकार पुँजी, नेपालया सीमा अतिक्रमण व राजनैतिक हस्तक्षेप, विश्वय् व्यापार युद्ध, इजरायलं सिरिया, इरान व प्यालिस्टाइने यागु जातीय दमन व भूमि कब्जा, युक्रेनता हलुक रुसविरुद्ध अमेरिकां याकगु युद्ध या विरोधय् साहित्य व सांस्कृतिक ज्याझ्व पिब्वयगु जुयो वगु द ।",
     intro_p4: "छपाः ल्हातं लाहापा थाय् मफथें तुं नेपालभाषा साहित्य तःमुंज्या व सांस्कृतिक ब्वज्या धिसिलाक हानेया निंतिं सकलीं ज्यापु, ज्यामी, विद्यार्थी, शिक्षक, उद्योगी, ब्यापारी, कर्मचारी व संघ संस्थाया भाजु मयजु पुं अलय भाय् व साहित्ययाता माया याङ दिइपुं दाजुकिजा तताकेहेपुँ सकलसिता थ्वनं हाँ थें तुं थुगुसी नं मनंनिसे हापं बियो ग्वाहालि याङ दियता व ज्या झ्वःखे“ ब्वति काय्ता इनाप याङ च्वङा । सुभाय् ¤",
+  
+    // Nepal Bhasa (example placeholders)
+    footer_heading: "सुकु न्ह्यः भाय् तः सांस्कृतिक विद्या बुज्या थाय्",
+    footer_a:
+      "क) पीङाकगु नेपाल भाषा साहित्य तःमुंञ्या <br> ग्वसाखल: इटाछें, नःपुखु, ख्वप <br> सम्पर्क नं.: ०१-५१५३४२० <br> ईमेल: 45tamujya@gmail.com",
+    footer_b:
+      "ख) नेपाल भाषा साहित्य तःमुंञ्या, कीपू, यें <br> नायो: श्रीकृष्ण महर्जन (पाँगा) <br> सम्पर्क नं.: ९८४१२३१२६२",
+    footer_c:
+      "ग) नेपाल भाषा साहित्य तःमुंञ्या, यें, महानगर <br> नकीं: रत्न डंगोल (ठहिटी) <br> सम्पर्क नं.: ९८४१२३३३२८",
+    footer_d:
+      "घ) नेपाल भाषा साहित्य तःमुंञ्या, टोखा, यें <br> नायो: काशिलाल डंगोल (टोखा) <br> सम्पर्क नं.: ९८६१९७६७१५",
+    footer_e:
+      "ड) नेपाल भाषा साहित्य तःमुंञ्या, पल (ललितपुर) <br> नायो: कविन्द्र डंगोल (खोना) <br> सम्पर्क नं.: ९८४१४५४७४५",
+    footer_f:
+      "च) नेपाल भाषा साहित्य तःमुंञ्या, भाँल (काभ्रे) <br> नायो: सत्यनारायण श्रेष्ठ (बनेपा) <br> सम्पर्क नं.: ९८४१४५४५४१",
+    footer_bottom:
+      "&copy; पीङाकगु नेपाल भाषा साहित्य तःमुंञ्या, इटाछें, नःपुखु, ख्वप-२",
   },
 };
