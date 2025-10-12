@@ -31,6 +31,9 @@ const translations = {
     intro_p4:
       "To make the Nepal Bhasa Literary and Cultural Festival a grand success, the participation and support of workers, farmers, youth, students, teachers, women, entrepreneurs, traders, and employees are as important as ever. We kindly request everyone to extend financial, physical, and moral support as in previous years.",
     
+    // Title
+    gallery: "Gallery", video: "Video", news: "News", venue: "Venue",
+
       // Footer
     footer_heading: "A Place to Submit Literature and Cultural Knowledge",
     footer_a:
@@ -46,7 +49,7 @@ const translations = {
     footer_f:
       "(f) Nepal Bhasa Sahitya Tamunjya, Bhal (Kavre) <br> Chief: Satyanarayan Shrestha (Banepa) <br> Contact: 9841454541",
     footer_bottom:
-      "&copy; 45th Nepal Bhasa Literary Festival, Itachen, Na:Pukhu, Khwopa-2",
+      "&copy; 45th Nepal Bhasa Literary Festival, Itachhen, Na:Pukhu, Khwopa-2",
   },
   ne: {
     brand: "साहित्य तःमुंज्या",
@@ -80,6 +83,9 @@ const translations = {
     intro_p4:
       "नेपालभाषा साहित्य तःमुंज्या तथा सांस्कृतिक कार्यक्रमलाई भव्यरूपमा सम्पन्न गर्न मजदुर, किसान, युवा, विद्यार्थी, शिक्षक, महिला, उद्योगी, व्यापारी, कर्मचारी लगायतको सहयोग र सहभागिता सदाझै जरुरी छ । दाजुभाइ, दिदीबहिनीहरूमा यस अगाडिझैँ यो वर्ष पनि आर्थिक, भौतिक, नैतिक सहयोग गर्नुहुन विनम्र अनुरोध छ ।",
  
+    // Title
+    gallery: "ग्यालेरी", video: "भिडियो", news: "समाचार", venue: "स्थान",
+
     // Footer (original Nepali)
     footer_heading: "साहित्य र सांस्कृतिक विद्या बुझाउने स्थान",
     footer_a:
@@ -125,6 +131,8 @@ const translations = {
     intro_p3: "नेपालभाषा साहित्य तःमुंज्याया दबुली अन्याय, अत्याचार, भ्रष्टाचार, सहकारी ठगी, नक्कली भुटानी शरणार्थी, ललिता निवास जग्गा प्रकरण, पतंजली जग्गा, गिरीबन्धु टी स्टेट, भिजिट भिसा, म्यान पावरया नामय मानव तस्कर, अमेरिकी नीति व कानुन पालन याय्मगु एमसिसि परियोजना, भारतीय विस्तारवाद एकाधिकार पुँजी, नेपालया सीमा अतिक्रमण व राजनैतिक हस्तक्षेप, विश्वय् व्यापार युद्ध, इजरायलं सिरिया, इरान व प्यालिस्टाइने यागु जातीय दमन व भूमि कब्जा, युक्रेनता हलुक रुसविरुद्ध अमेरिकां याकगु युद्ध या विरोधय् साहित्य व सांस्कृतिक ज्याझ्व पिब्वयगु जुयो वगु द ।",
     intro_p4: "छपाः ल्हातं लाहापा थाय् मफथें तुं नेपालभाषा साहित्य तःमुंज्या व सांस्कृतिक ब्वज्या धिसिलाक हानेया निंतिं सकलीं ज्यापु, ज्यामी, विद्यार्थी, शिक्षक, उद्योगी, ब्यापारी, कर्मचारी व संघ संस्थाया भाजु मयजु पुं अलय भाय् व साहित्ययाता माया याङ दिइपुं दाजुकिजा तताकेहेपुँ सकलसिता थ्वनं हाँ थें तुं थुगुसी नं मनंनिसे हापं बियो ग्वाहालि याङ दियता व ज्या झ्वःखे“ ब्वति काय्ता इनाप याङ च्वङा । सुभाय् ¤",
   
+    gallery: "ग्यालरी", video: "भिडियो", news: "बुखँ:", venue: "थां",
+    
     // Nepal Bhasa (example placeholders)
     footer_heading: "सुकु न्ह्यः भाय् तः सांस्कृतिक विद्या बुज्या थाय्",
     footer_a:
