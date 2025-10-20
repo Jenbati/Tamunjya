@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    brand: "Tamunjya Literature",
-    home: "Home",
+    year: "2025 (45)",
+    home: "Nepal Bhasa Sahitya Tamunjya",
     intro: "Introduction",
     schedule: "Schedule",
     gallery: "Gallery",
@@ -9,7 +9,7 @@ const translations = {
     news: "News",
     venue: "Venue",
     heroTitle: "45 Nepal Bhasa Literature Festival",
-    heroSubtitle: "October 4–5, Na: Pukhu, Khwopa",
+    heroSubtitle: "2025, October 4–5, Na: Pukhu, Khwopa",
 
     // countdown timer
     countdown_loading: "Loading...",
@@ -52,8 +52,8 @@ const translations = {
       "&copy; 45th Nepal Bhasa Literary Festival, Itachhen, Na:Pukhu, Khwopa-2",
   },
   ne: {
-    brand: "साहित्य तःमुंज्या",
-    home: "गृहपृष्ठ",
+    year: "२०८२ (४५)",
+    home: "नेपालभाषा साहित्य तःमुंज्या",
     intro: "परिचय",
     schedule: "तालिका",
     gallery: "ग्यालेरी",
@@ -61,7 +61,7 @@ const translations = {
     news: "समाचार",
     venue: "स्थान",
     heroTitle: "४५ नेपालभाषा साहित्य तःमुंज्या",
-    heroSubtitle: "असोज १८–१९ गते, न:पुखु, ख्वप",
+    heroSubtitle: "२०८२, असोज १८–१९ गते, न:पुखु, ख्वप",
 
     // countdown timer
     countdown_loading: "लोड हुँदैछ...",
@@ -104,8 +104,8 @@ const translations = {
       "&copy; ४५ औं नेपालभाषा साहित्य तःमुंञ्या, इटाछेँ, नःपुखु, ख्वप-२",
   },
   newa: {
-    brand: "तःमुंज्या साहित्य",
-    home: "छे",
+    year: "११४५ (पीङाकगु)",
+    home: "नेपालभाषा साहित्य तःमुंज्या",
     intro: "म्हासिकिगु",
     schedule: "सुची",
     gallery: "ग्यालरी",
@@ -113,7 +113,7 @@ const translations = {
     news: "बुखँ:",
     venue: "थां",
     heroTitle: "पीङाकगु नेपालभाषा साहित्य तःमुंज्या",
-    heroSubtitle: "कौलाथ्व द्वादशी र त्रयाेदशी, न:पुखु, ख्वप",
+    heroSubtitle: "११४५, कौलाथ्व द्वादशी र त्रयाेदशी, न:पुखु, ख्वप",
 
     // countdown timer
     countdown_loading: "लोड ज्या ...",
