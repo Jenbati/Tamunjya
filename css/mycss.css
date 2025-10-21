@@ -1,34 +1,107 @@
-.hero {
-  background: linear-gradient(45deg, rgba(255, 49, 49, 0.7), rgba(255, 214, 10, 0.7)), url("images/banner.jpg") no-repeat center center;
-  background-size: cover; /* Ensures image covers container */
-  background-attachment: scroll; /* Parallax effect on desktop */
-  height: 80vh;
+/* =====================================================
+   NAVBAR & SELECTORS
+===================================================== */
+.navbar .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Dropdown (select) */
+select {
+  background-color: #212529;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+select:hover {
+  background-color: #2a2f34;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 6px #ffc107;
+}
+
+/* Year and Language Selectors */
+.year-selector,
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+/* Brand Hover Effect */
+.navbar-brand {
+  text-shadow: 0 0 5px rgba(255, 193, 7, 0.4);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.9);
+}
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .year-selector,
+  .language-selector {
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  select {
+    width: auto;
+    min-width: 130px;
+  }
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+.hero {
+  background: linear-gradient(45deg, rgba(255, 49, 49, 0.7), rgba(255, 214, 10, 0.7)), url("images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 80vh;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  margin-top: 56px; /* offset for navbar */
   text-align: center;
+  margin-top: 56px;
   padding: 20px;
 }
 
 .hero img {
-  width: clamp(80px, 15vw, 150px); /* Logo responsive */
+  width: clamp(80px, 15vw, 150px);
   margin-bottom: 1rem;
 }
 
 .hero h1 {
+  font-size: clamp(1.6rem, 5vw, 3rem);
   text-shadow: 0 0 10px rgba(255, 214, 10, 0.8);
-  font-size: clamp(1.6rem, 5vw, 3rem); /* scales smoothly */
 }
 
 .hero p {
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: bold;
-  color: #222; /* ensure contrast on light backgrounds */
+  color: #222;
 }
 
+/* Countdown Timer */
 #countdown {
   margin-top: 1rem;
   font-size: clamp(1rem, 3vw, 1.5rem);
@@ -38,20 +111,20 @@
   padding: 10px 20px;
   border-radius: 8px;
   display: inline-block;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* subtle depth */
-  letter-spacing: 1px; /* improves number readability */
+  letter-spacing: 1px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
 }
 
 #countdown:hover {
-  transform: scale(1.05); /* fun hover effect */
+  transform: scale(1.05);
 }
 
-/* Responsive Tablets */
+/* Hero Responsive */
 @media (max-width: 768px) {
   .hero {
     height: 60vh;
-    background-attachment: scroll; /* prevent mobile glitches */
+    background-attachment: scroll;
   }
 }
 
@@ -61,39 +134,29 @@
   }
 }
 
-/* Introduction */
-#introduction h2{
+/* =====================================================
+   INTRODUCTION / GALLERY / VIDEO TITLES
+===================================================== */
+#introduction h2,
+#gallery h2,
+#video h2 {
   text-align: center;
-  color: #dc3545; /* Bootstrap danger red */
+  color: #dc3545;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-/* Gallery */
-#gallery h2{
-  text-align: center;
-  color: #dc3545; /* Bootstrap danger red */
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-/* Video */
-#video h2{
-  text-align: center;
-  color: #dc3545; /* Bootstrap danger red */
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-/* News Section */
+/* =====================================================
+   NEWS SECTION
+===================================================== */
 #news {
-  background: #f8f9fa; /* light gray for contrast */
+  background: #f8f9fa;
   padding: 60px 0;
 }
 
 #news h2 {
   text-align: center;
-  color: #dc3545; /* Bootstrap danger red */
+  color: #dc3545;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -130,7 +193,7 @@
   text-decoration: underline;
 }
 
-/* News Responsive grid for larger screens */
+/* News Responsive Grid */
 @media (min-width: 768px) {
   .news-content {
     grid-template-columns: repeat(2, 1fr);
@@ -143,14 +206,16 @@
   }
 }
 
-/* Venue */
+/* =====================================================
+   VENUE SECTION
+===================================================== */
 #venue {
   padding: 60px 0;
 }
 
 #venue h2 {
   text-align: center;
-  color: #dc3545; /* Bootstrap red */
+  color: #dc3545;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -170,7 +235,7 @@
 
 .venue iframe {
   width: 100%;
-  max-width: 350px; /* smaller map */
+  max-width: 350px;
   height: 250px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -198,18 +263,21 @@
   color: #fff;
 }
 
-/* Venue responsive side by side on larger screens */
+/* Venue Responsive Layout */
 @media (min-width: 768px) {
   .venue {
     grid-template-columns: 1fr 1fr;
   }
+
   .venue iframe {
     max-width: 100%;
     height: 320px;
   }
 }
 
-/* Bottom Video */
+/* =====================================================
+   FIXED BOTTOM VIDEO
+===================================================== */
 .video-bottom-left {
   position: fixed;
   bottom: 10px;
@@ -220,15 +288,15 @@
   z-index: 999;
 }
 
-/* video bottom responsive */
 @media (max-width: 576px) {
   .video-bottom-left {
     display: none;
   }
 }
 
-/*Live video*/
-/* Live Video Section */
+/* =====================================================
+   LIVE VIDEO SECTION
+===================================================== */
 #live-video-1,
 #live-video-2 {
   background: #f8f9fa;
@@ -265,11 +333,19 @@
   border: none;
 }
 
-
-/* Responsive adjustments */
+/* Live Video Responsive */
 @media (max-width: 768px) {
   .video-wrapper {
     width: 95%;
+  }
+
+  #live-video-1,
+  #live-video-2 {
+    padding: 20px 0;
+  }
+
+  .video-wrapper {
+    margin-bottom: 20px;
   }
 }
 
@@ -280,20 +356,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .video-wrapper {
-    width: 95%;
-  }
-}
-
-/* Reduce space between live video sections on mobile */
-@media (max-width: 768px) {
-  #live-video-1,
-  #live-video-2 {
-    padding: 20px 0; /* previously 60px 0 */
-  }
-
-  .video-wrapper {
-    margin-bottom: 20px; /* reduce extra bottom gap */
-  }
-}
