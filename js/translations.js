@@ -26,7 +26,7 @@ const translations = {
       "To make the Nepal Bhasa Literary and Cultural Festival a grand success, the participation and support of workers, farmers, youth, students, teachers, women, entrepreneurs, traders, and employees are as important as ever. We kindly request everyone to extend financial, physical, and moral support as in previous years.",
     
     // Title
-    gallery: "Gallery", video: "Video", news: "News", venue: "Venue",
+    organizer: "Organizer", gallery: "Gallery", video: "Video", news: "News", venue: "Venue",
 
       // Footer
     footer_heading: "A Place to Submit Literature and Cultural Knowledge",
@@ -72,7 +72,7 @@ const translations = {
       "नेपालभाषा साहित्य तःमुंज्या तथा सांस्कृतिक कार्यक्रमलाई भव्यरूपमा सम्पन्न गर्न मजदुर, किसान, युवा, विद्यार्थी, शिक्षक, महिला, उद्योगी, व्यापारी, कर्मचारी लगायतको सहयोग र सहभागिता सदाझै जरुरी छ । दाजुभाइ, दिदीबहिनीहरूमा यस अगाडिझैँ यो वर्ष पनि आर्थिक, भौतिक, नैतिक सहयोग गर्नुहुन विनम्र अनुरोध छ ।",
  
     // Title
-    gallery: "ग्यालेरी", video: "भिडियो", news: "समाचार", venue: "स्थान",
+    organizer: "आयोजक", gallery: "ग्यालेरी", video: "भिडियो", news: "समाचार", venue: "स्थान",
 
     // Footer (original Nepali)
     footer_heading: "साहित्य र सांस्कृतिक विद्या बुझाउने स्थान",
@@ -114,7 +114,7 @@ const translations = {
     intro_p4: "छपाः ल्हातं लाहापा थाय् मफथें तुं नेपालभाषा साहित्य तःमुंज्या व सांस्कृतिक ब्वज्या धिसिलाक हानेया निंतिं सकलीं ज्यापु, ज्यामी, विद्यार्थी, शिक्षक, उद्योगी, ब्यापारी, कर्मचारी व संघ संस्थाया भाजु मयजु पुं अलय भाय् व साहित्ययाता माया याङ दिइपुं दाजुकिजा तताकेहेपुँ सकलसिता थ्वनं हाँ थें तुं थुगुसी नं मनंनिसे हापं बियो ग्वाहालि याङ दियता व ज्या झ्वःखे“ ब्वति काय्ता इनाप याङ च्वङा । सुभाय् ¤",
   
     // Title
-    gallery: "ग्यालरी", video: "भिडियो", news: "बुखँ:", venue: "थां",
+    organizer: "ग्वसाखल", gallery: "ग्यालरी", video: "भिडियो", news: "बुखँ:", venue: "थां",
     
     // Nepal Bhasa (example placeholders)
     footer_heading: "सुकु न्ह्यः भाय् तः सांस्कृतिक विद्या बुज्या थाय्",

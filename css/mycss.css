@@ -134,9 +134,11 @@ select:focus {
   }
 }
 
+
 /* =====================================================
-   INTRODUCTION / GALLERY / VIDEO TITLES
+   ORGANIZER / INTRODUCTION / GALLERY / VIDEO TITLES
 ===================================================== */
+#organizer,
 #introduction h2,
 #gallery h2,
 #video h2 {
