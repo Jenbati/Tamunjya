@@ -136,7 +136,7 @@ select:focus {
 
 
 /* =====================================================
-   ORGANIZER / INTRODUCTION / GALLERY / VIDEO TITLES
+   ORGANIZER / WINNER / INTRODUCTION / GALLERY / VIDEO TITLES
 ===================================================== */
 #organizer h2,
 #winner h2,
@@ -148,6 +148,7 @@ select:focus {
   font-weight: bold;
   margin-bottom: 30px;
 }
+
 
 /* =====================================================
    NEWS SECTION
