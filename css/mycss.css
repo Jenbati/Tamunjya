@@ -138,7 +138,8 @@ select:focus {
 /* =====================================================
    ORGANIZER / INTRODUCTION / GALLERY / VIDEO TITLES
 ===================================================== */
-#organizer,
+#organizer h2,
+#winner h2,
 #introduction h2,
 #gallery h2,
 #video h2 {
