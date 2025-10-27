@@ -123,14 +123,14 @@ select:focus {
 /* Hero Responsive */
 @media (max-width: 768px) {
   .hero {
-    height: 50vh;
+    height: 40vh;
     background-attachment: scroll;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    height: 40vh;
+    height: 30vh;
   }
 }
 
