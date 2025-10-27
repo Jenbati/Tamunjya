@@ -149,6 +149,9 @@ select:focus {
   margin-bottom: 30px;
 }
 
+#winner a{
+  text-decoration: none;
+}
 
 /* =====================================================
    NEWS SECTION
