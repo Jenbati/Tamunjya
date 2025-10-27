@@ -71,10 +71,10 @@ select:focus {
    HERO SECTION
 ===================================================== */
 .hero {
-  background: linear-gradient(45deg, rgba(255, 49, 49, 0.7), rgba(255, 214, 10, 0.7)), url("images/banner.jpg") no-repeat center center;
+  background: linear-gradient(45deg, rgba(255, 49, 49, 0.7), rgba(255, 214, 10, 0.7)), url("../images/banner.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: scroll;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,14 +123,14 @@ select:focus {
 /* Hero Responsive */
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 50vh;
     background-attachment: scroll;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
