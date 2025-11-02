@@ -159,8 +159,8 @@ const translations = {
     member7: "दुज",
 
     winner:"सिरपाः त्याकूम्ह", 
-    literary:"साहित्यिक विधा या लिच्च",
-    cultural:"सांस्कृतिक विधा या लिच्च",
+    literary:"साहित्य विधाया लिच्वः",
+    cultural:"सांस्कृतिक विधाया लिच्वः",
 
     gallery: "ग्यालरी", 
     video: "भिडियो", 
