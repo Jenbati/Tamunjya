@@ -1,67 +1,4 @@
 const translations = {
-  en: {
-    year: "2025 (45)",
-    home: "Nepal Bhasa Sahitya Tamunjya",
-    heroTitle: "45 Nepal Bhasa Literature Festival",
-    heroSubtitle: "2025, October 4–5, Na: Pukhu, Khwopa",
-
-    // countdown timer
-    countdown_loading: "Loading...",
-    // countdown_started: "The event has started!",
-    countdown_started: "The program has ended!",
-    day: "day",
-    hour: "hour",
-    minute: "minute",
-    second: "second",
-
-    // --- Introduction ---
-    intro_heading: "Appeal of the 45th Nepal Bhasa Literary Festival!",
-    intro_p1:
-      "With the motto 'When people live, language lives', the Nepal Bhasa Literary Festival has been organized in different localities of Bhaktapur. This year, we are pleased to announce that the 45th Tamunjya will be held at Na: Pukhu, Itache Tole, Ward No. 2, Bhaktapur, on Nepal Sambat 1145 Kaulaga Dwadashi and Trayodashi (October 4 and 5, 2025).",
-    intro_p2:
-      "The festival was established with the objective of promoting our language, literature, and culture, while raising public awareness on political and social issues at home and abroad. Tamunjya’s Dabali serves as both a literary and a political platform, voicing the rights of the working class and nurturing writers from among them every year.",
-    intro_p3:
-      "The Dabali of Nepal Bhasa Literary Festival presents literary and cultural programs against injustice, corruption, fake refugee scams, land fraud, human trafficking in the name of foreign employment, and global imperialism, among other issues. It also addresses social, national, and international concerns as a duty of writers and intellectuals.",
-    intro_p4:
-      "To make the Nepal Bhasa Literary and Cultural Festival a grand success, the participation and support of workers, farmers, youth, students, teachers, women, entrepreneurs, traders, and employees are as important as ever. We kindly request everyone to extend financial, physical, and moral support as in previous years.",
-    
-    // Title
-    organizer: "Organizer",
-    organizer_p: "Key organizers involved in the 45th Sahitya Tamunjya program",
-    member1: "President",
-    member2: "Vice President",
-    member3: "Secretary",
-    member4: "Deputy Secretary",
-    member5: "Treasurer",
-    member6: "Deputy Treasurer",
-    member7: "Member",
-
-    winner:"Award Winner", 
-    literary:"Winners of the literary category",
-    cultural:"Winners of the cultural category",
-
-    gallery: "Gallery", 
-    video: "Video", 
-    news: "News", 
-    venue: "Venue",
-
-      // Footer
-    footer_heading: "A Place to Submit Literature and Cultural Knowledge",
-    footer_a:
-      "(a) 45 Nepal Bhasa Sahitya Tamunjya <br> Organizer: Itachhen, Na:Pukhu, Khwopa <br> Contact: 01-5153420 <br> Email: 45tamujya@gmail.com",
-    footer_b:
-      "(b) Nepal Bhasa Sahitya Tamunjya, Kipu, Ktm <br> Chief: Shreekrishna Maharjan (Panga) <br> Contact: 9841231262",
-    footer_c:
-      "(c) Nepal Bhasa Sahitya Tamunjya, Ktm, Metropolitan <br> Chief: Ratna Dangol (Thahiti) <br> Contact: 9841233328",
-    footer_d:
-      "(d) Nepal Bhasa Sahitya Tamunjya, Tokha, Ktm <br> Chief: Kashilal Dangol (Tokha) <br> Contact: 9861976715",
-    footer_e:
-      "(e) Nepal Bhasa Sahitya Tamunjya, Pal (Lalitpur) <br> Chief: Kavindra Dangol (Khona) <br> Contact: 9841454745",
-    footer_f:
-      "(f) Nepal Bhasa Sahitya Tamunjya, Bhal (Kavre) <br> Chief: Satyanarayan Shrestha (Banepa) <br> Contact: 9841454541",
-    footer_bottom:
-      "&copy; 45th Nepal Bhasa Literary Festival, Itachhen, Na:Pukhu, Khwopa-2",
-  },
   ne: {
     year: "२०८२ (४५)",
     home: "नेपालभाषा साहित्य तःमुंज्या",
@@ -111,7 +48,7 @@ const translations = {
     // Footer (original Nepali)
     footer_heading: "साहित्य र सांस्कृतिक विद्या बुझाउने स्थान",
     footer_a:
-      "क) पीङाकगु नेपालभाषा साहित्य तःमुंज्या <br> आयोजक: इटाछें, नःपुखु, ख्वप,<br> सम्पर्क नं.: ०१-५१५३४२० <br> Email: 45tamujya@gmail.com",
+      "क) पीङाकगु नेपालभाषा साहित्य तःमुंज्या <br> आयोजक: इटाछें, नःपुखु, ख्वप,<br> सम्पर्क नं.: ०१-५१५३४२०",
     footer_b:
       "ख) नेपालभाषा साहित्य तःमुंज्या, कीपू, यें <br> नायः: श्रीकृष्ण महर्जन (पाँगा) <br> सम्पर्क नं.: ९८४१२३१२६२",
     footer_c:
@@ -184,4 +121,67 @@ const translations = {
     footer_bottom:
       "&copy; पीङाकगु नेपाल भाषा साहित्य तःमुंञ्या, इटाछें, नःपुखु, ख्वप-२",
   },
+  en: {
+    year: "2025 (45)",
+    home: "Nepal Bhasa Sahitya Tamunjya",
+    heroTitle: "45 Nepal Bhasa Literature Festival",
+    heroSubtitle: "2025, October 4–5, Na: Pukhu, Khwopa",
+
+    // countdown timer
+    countdown_loading: "Loading...",
+    // countdown_started: "The event has started!",
+    countdown_started: "The program has ended!",
+    day: "day",
+    hour: "hour",
+    minute: "minute",
+    second: "second",
+
+    // --- Introduction ---
+    intro_heading: "Appeal of the 45th Nepal Bhasa Literary Festival!",
+    intro_p1:
+      "With the motto 'When people live, language lives', the Nepal Bhasa Literary Festival has been organized in different localities of Bhaktapur. This year, we are pleased to announce that the 45th Tamunjya will be held at Na: Pukhu, Itache Tole, Ward No. 2, Bhaktapur, on Nepal Sambat 1145 Kaulaga Dwadashi and Trayodashi (October 4 and 5, 2025).",
+    intro_p2:
+      "The festival was established with the objective of promoting our language, literature, and culture, while raising public awareness on political and social issues at home and abroad. Tamunjya’s Dabali serves as both a literary and a political platform, voicing the rights of the working class and nurturing writers from among them every year.",
+    intro_p3:
+      "The Dabali of Nepal Bhasa Literary Festival presents literary and cultural programs against injustice, corruption, fake refugee scams, land fraud, human trafficking in the name of foreign employment, and global imperialism, among other issues. It also addresses social, national, and international concerns as a duty of writers and intellectuals.",
+    intro_p4:
+      "To make the Nepal Bhasa Literary and Cultural Festival a grand success, the participation and support of workers, farmers, youth, students, teachers, women, entrepreneurs, traders, and employees are as important as ever. We kindly request everyone to extend financial, physical, and moral support as in previous years.",
+    
+    // Title
+    organizer: "Organizer",
+    organizer_p: "Key organizers involved in the 45th Sahitya Tamunjya program",
+    member1: "President",
+    member2: "Vice President",
+    member3: "Secretary",
+    member4: "Deputy Secretary",
+    member5: "Treasurer",
+    member6: "Deputy Treasurer",
+    member7: "Member",
+
+    winner:"Award Winner", 
+    literary:"Winners of the literary category",
+    cultural:"Winners of the cultural category",
+
+    gallery: "Gallery", 
+    video: "Video", 
+    news: "News", 
+    venue: "Venue",
+
+      // Footer
+    footer_heading: "A Place to Submit Literature and Cultural Knowledge",
+    footer_a:
+      "(a) 45 Nepal Bhasa Sahitya Tamunjya <br> Organizer: Itachhen, Na:Pukhu, Khwopa <br> Contact: 01-5153420 <br> Email: 45tamujya@gmail.com",
+    footer_b:
+      "(b) Nepal Bhasa Sahitya Tamunjya, Kipu, Ktm <br> Chief: Shreekrishna Maharjan (Panga) <br> Contact: 9841231262",
+    footer_c:
+      "(c) Nepal Bhasa Sahitya Tamunjya, Ktm, Metropolitan <br> Chief: Ratna Dangol (Thahiti) <br> Contact: 9841233328",
+    footer_d:
+      "(d) Nepal Bhasa Sahitya Tamunjya, Tokha, Ktm <br> Chief: Kashilal Dangol (Tokha) <br> Contact: 9861976715",
+    footer_e:
+      "(e) Nepal Bhasa Sahitya Tamunjya, Pal (Lalitpur) <br> Chief: Kavindra Dangol (Khona) <br> Contact: 9841454745",
+    footer_f:
+      "(f) Nepal Bhasa Sahitya Tamunjya, Bhal (Kavre) <br> Chief: Satyanarayan Shrestha (Banepa) <br> Contact: 9841454541",
+    footer_bottom:
+      "&copy; 45th Nepal Bhasa Literary Festival, Itachhen, Na:Pukhu, Khwopa-2",
+  }
 };
